@@ -298,7 +298,7 @@
     <p style="font-size:0.85em;color:#b0bec5;margin-bottom:10px;">
       Cole quantos concursos quiser. Formatos aceitos:
       <b>1 por linha</b> (data + 6 dezenas), <b>CSV</b>, ou <b>número do concurso + data + 6 dezenas</b>.
-      A base já vem carregada até o <b>concurso 3061 (22/09/2026)</b>.
+      A base já vem carregada até o <b>concurso 3087 (17/11/2026)</b>.
     </p>
 
     <div class="split-2">
@@ -3557,15 +3557,40 @@ const concursosBase = [
 {concurso:3058,data:'2026-09-15',dezenas:[14,23,53,56,57,60]},
 {concurso:3059,data:'2026-09-17',dezenas:[1,2,7,18,33,35]},
 {concurso:3060,data:'2026-09-20',dezenas:[6,15,23,36,37,38]},
-{concurso:3061,data:'2026-09-22',dezenas:[24,25,28,37,47,55]}
+{concurso:3061,data:'2026-09-22',dezenas:[24,25,28,37,47,55]},
+{concurso:3062,data:'2026-09-24',dezenas:[11,38,18,17,5,9]},
+{concurso:3063,data:'2026-09-27',dezenas:[41,35,48,5,43,36]},
+{concurso:3064,data:'2026-09-29',dezenas:[25,4,20,27,48,10]},
+{concurso:3065,data:'2026-10-01',dezenas:[30,10,50,53,8,38]},
+{concurso:3066,data:'2026-10-03',dezenas:[48,13,4,9,6,28]},
+{concurso:3067,data:'2026-10-06',dezenas:[33,41,4,52,17,1]},
+{concurso:3068,data:'2026-10-08',dezenas:[7,43,10,39,57,40]},
+{concurso:3069,data:'2026-10-11',dezenas:[47,5,22,44,57,19]},
+{concurso:3070,data:'2026-10-14',dezenas:[54,43,60,29,19,27]},
+{concurso:3071,data:'2026-10-18',dezenas:[12,51,52,41,22,45]},
+{concurso:3072,data:'2026-10-20',dezenas:[40,6,16,31,9,2]},
+{concurso:3073,data:'2026-10-22',dezenas:[23,13,41,28,58,4]},
+{concurso:3074,data:'2026-10-24',dezenas:[57,20,2,39,3,25]},
+{concurso:3076,data:'2026-10-27',dezenas:[6,49,32,57,38,30]},
+{concurso:3077,data:'2026-10-28',dezenas:[18,14,40,31,35,2]},
+{concurso:3078,data:'2026-10-29',dezenas:[36,7,29,12,34,5]},
+{concurso:3079,data:'2026-10-30',dezenas:[5,40,9,59,41,16]},
+{concurso:3080,data:'2026-11-01',dezenas:[29,28,13,17,58,39]},
+{concurso:3081,data:'2026-11-04',dezenas:[42,17,57,59,43,10]},
+{concurso:3082,data:'2026-11-06',dezenas:[24,38,4,16,23,44]},
+{concurso:3083,data:'2026-11-08',dezenas:[22,37,46,29,54,25]},
+{concurso:3084,data:'2026-11-10',dezenas:[37,14,31,6,22,30]},
+{concurso:3085,data:'2026-11-12',dezenas:[10,59,27,37,39,29]},
+{concurso:3086,data:'2026-11-15',dezenas:[43,3,20,35,46,38]},
+{concurso:3087,data:'2026-11-17',dezenas:[6,10,23,25,48,50]}
 ];
 
 /* =========================================================
    CONSTANTES E ESTADO GLOBAL
    ========================================================= */
-const TOTAL_BASE = 3061;
-const ULTIMO_CONCURSO_BASE = 3061;
-const DATA_ULTIMA_BASE = '2026-09-22';
+const TOTAL_BASE = 3087;
+const ULTIMO_CONCURSO_BASE = 3087;
+const DATA_ULTIMA_BASE = '2026-11-17';
 const STORAGE_KEY = 'megaSenaPro_v2';
 const NUM_CARTOES = 38;
 const BACKTEST_JANELA = 100;
@@ -3882,7 +3907,7 @@ function exportarDados() {
 }
 
 function resetarTudo() {
-  if (!confirm('⚠️ Apagar TODOS os dados salvos e recarregar a base original (3061 concursos)?')) return;
+  if (!confirm('⚠️ Apagar TODOS os dados salvos e recarregar a base original (3087 concursos)?')) return;
   localStorage.removeItem(STORAGE_KEY);
   inicializarBase();
   salvarNoNavegador();
@@ -4885,5 +4910,4 @@ window.addEventListener('DOMContentLoaded', () => {
 </script>
 </body>
 </html>
-
 
